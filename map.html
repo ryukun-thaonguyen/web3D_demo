@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map</title>
+	<style type="text/css">
+		
+		body{
+			background: black;
+		}
+		.map{
+
+			background: none;
+			width: 8cm;
+			margin-right: 2cm;
+			margin-top: 1cm;
+			position: absolute;
+			left: 80%;
+		}
+		.img-map{
+			text-align: center;
+		}
+		.map_1{
+			position: absolute;
+			top: 1.18cm;
+			left: 1.15cm;
+		}
+		.map_2{
+			position: absolute;
+			top: 4.35cm;
+			left: 0.32cm;
+		}
+		.map_3{
+			position: absolute;
+			top: 7.5cm;
+			left: 3.23cm;
+		}
+		.map_4{
+			position: absolute;
+			top: 9.88cm;
+			left: 0.55cm;
+		}
+		.map_5{
+			position: absolute;
+			top: 12.12cm;
+			left: 3.85cm;
+		}
+		.btn_Map_left{
+			border: none;
+			position: relative;
+			top: -5px;
+			left: 10px;
+			padding: 10px;
+			border-radius: 100%;
+			background: none;
+			border: 4px solid white;
+
+		}
+		.btn_Map_left:hover{
+			padding: 12px 12px;
+			background: #4aa84e;
+		}
+		.btn_Map_left:active{
+			padding: 12px 12px;
+			background: #4aa84e;
+		}
+		
+		.btn_Map_right:active{
+			padding: 12px 12px;
+			background: #4aa84e;
+		}
+		.btn_Map_right:hover{
+			padding: 12px 12px;
+			background: #4aa84e;
+		}
+		
+		.btn_Map_right{
+
+			position: relative;
+			top: -5px;
+			left: -10px;
+			padding: 10px;
+			border-radius: 100%;
+			background: none;
+			border: 4px solid white;
+
+		}
+		.style_Map{
+				color: white;
+				font-size: 16px;
+				font-weight: bold;
+				font-family: FestivoLettersNo1,Arial;
+		}
+		.back{
+			position: relative;
+			left: 80px;
+			top: -10px;
+		}
+	
+		.text_back{
+			position: relative;
+			top: -10px;
+			left: 5px;
+			color: white;
+			font-size: 17px;
+			font-weight: bold;
+			font-family: FestivoLettersNo1,Arial;
+		}
+		.text_back:before{
+			 position: relative;
+		    left: -8px;
+		    top: 10px;
+		    content: ' ';
+		    display: inline-block;
+		    background-size: 100%;
+		    width: 33px;
+		    height: 33px;
+		    background-image:url(back.png);
+		}
+		.back span:hover{
+			color: pink;
+			font-size: 19px;
+		}
+		.btn_back{
+			background: none;
+			border: none;
+		}
+		
+	</style>
+	<script type="text/javascript">
+		function map_1(x){
+			if(x==1)
+			{
+			var object = document.getElementById("btn_1");
+			object.style.padding = 12+"px";
+			object.style.background = "#4aa84e";
+			}
+			if(x==2)
+			{
+			var object = document.getElementById("btn_1");
+			object.style.padding = 10+"px";
+			object.style.background = "none";
+			var object = document.getElementById("btn_2");
+			object.style.padding = 12+"px";
+			object.style.background = "#4aa84e";
+			}
+			if(x==3)
+			{
+			var object = document.getElementById("btn_3");
+			object.style.padding = 12+"px";
+			object.style.background = "#4aa84e";
+			}
+			if(x==4)
+			{
+			var object = document.getElementById("btn_4");
+			object.style.padding = 12+"px";
+			object.style.background = "#4aa84e";
+			}
+			if(x==5)
+			{
+			var object = document.getElementById("btn_5");
+			object.style.padding = 12+"px";
+			object.style.background = "#4aa84e";
+			}
+
+			
+				
+		}
+	</script>
+</head>
+<body>
+		
+		<div class="map">
+			<div class="img-map">
+			<img src="trail_menu_bg.png">
+		    </div>
+		    <div class="style_Map">
+
+		    	<div class="map_1">
+		    	<span>THE VILLAGE</span><button onclick="map_1(1)" id="btn_1" class="btn_Map_left"></button>
+		    	</div>
+
+		    	<div class="map_2">
+		    	<span>THE RIVEBANK</span><button onclick="map_1(2)" id="btn_2" class="btn_Map_left"></button>
+		    	</div>
+
+		    	<div class="map_3">
+		    	<button id="btn_3"  onclick="map_1(3)" class="btn_Map_right"></button><span>THE TRAIL</span>
+		    	</div>
+
+		    	<div class="map_4">
+		    	<span>THE NATIVES</span><button onclick="map_1(4)" id="btn_4"  class="btn_Map_left"></button>
+		    	</div>
+
+		    	<div class="map_5">
+		    	<button onclick="map_1(5)" id="btn_5"  class="btn_Map_right"></button><span>THE TRAIL</span>
+		    	</div>
+		    </div>
+		<div class="back">
+				<span class="text_back">BACK TO MAP</span>
+		</div>
+		
+		</div>
+</body>
+</html>
