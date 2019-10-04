@@ -12,7 +12,7 @@
 			background: none;
 			width: 8cm;
 			margin-right: 2cm;
-			margin-top: 1cm;
+			margin-top: 0.5cm;
 			position: absolute;
 			left: 80%;
 		}
@@ -96,17 +96,20 @@
 			top: -10px;
 		}
 	
-		.text_back{
+		.back button{
 			position: relative;
-			top: -10px;
-			left: 5px;
+			top: 0px;
+			left: -10px;
 			color: white;
 			font-size: 17px;
 			font-weight: bold;
 			font-family: FestivoLettersNo1,Arial;
+			background: none;
+			border: none;
+			text-align: center;
 		}
-		.text_back:before{
-			 position: relative;
+		.img_back{
+			position: relative;
 		    left: -8px;
 		    top: 10px;
 		    content: ' ';
@@ -114,56 +117,74 @@
 		    background-size: 100%;
 		    width: 33px;
 		    height: 33px;
-		    background-image:url(back.png);
 		}
-		.back span:hover{
-			color: pink;
-			font-size: 19px;
-		}
-		.btn_back{
-			background: none;
-			border: none;
-		}
-		
 	</style>
 	<script type="text/javascript">
 		function map_1(x){
-			if(x==1)
-			{
-			var object = document.getElementById("btn_1");
-			object.style.padding = 12+"px";
-			object.style.background = "#4aa84e";
-			}
-			if(x==2)
-			{
 			var object = document.getElementById("btn_1");
 			object.style.padding = 10+"px";
 			object.style.background = "none";
-			var object = document.getElementById("btn_2");
-			object.style.padding = 12+"px";
-			object.style.background = "#4aa84e";
+			var object1 = document.getElementById("btn_2");
+			object1.style.padding = 10+"px";
+			object1.style.background = "none";
+			var object2 = document.getElementById("btn_3");
+			object2.style.padding = 10+"px";
+			object2.style.background = "none";
+			var object3 = document.getElementById("btn_4");
+			object3.style.padding = 10+"px";
+			object3.style.background = "none";
+			var object4 = document.getElementById("btn_5");
+			object4.style.padding = 10+"px";
+			object4.style.background = "none";
+			if(x==1)
+			{
+				var object = document.getElementById("btn_1");
+				object.style.padding = 12+"px";
+				object.style.background = "#4aa84e";
 			}
+			if(x==2)
+			{
+				var object = document.getElementById("btn_2");
+				object.style.padding = 12+"px";
+				object.style.background = "#4aa84e";
+				}
 			if(x==3)
 			{
-			var object = document.getElementById("btn_3");
-			object.style.padding = 12+"px";
-			object.style.background = "#4aa84e";
+				var object = document.getElementById("btn_3");
+				object.style.padding = 12+"px";
+				object.style.background = "#4aa84e";
 			}
 			if(x==4)
 			{
-			var object = document.getElementById("btn_4");
-			object.style.padding = 12+"px";
-			object.style.background = "#4aa84e";
+				var object = document.getElementById("btn_4");
+				object.style.padding = 12+"px";
+				object.style.background = "#4aa84e";
 			}
 			if(x==5)
 			{
-			var object = document.getElementById("btn_5");
-			object.style.padding = 12+"px";
-			object.style.background = "#4aa84e";
+				var object = document.getElementById("btn_5");
+				object.style.padding = 12+"px";
+				object.style.background = "#4aa84e";
 			}
 
 			
 				
+		}
+
+		function zoomBigBack(){
+
+				var img = document.getElementById("img_back");
+				img.style.width = "40px";
+				img.style.height = "40px";
+				 document.getElementById("text_back").style.fontSize = "20px";
+
+
+		}
+		function zoomNomalBack(){
+				var img = document.getElementById("img_back");
+				img.style.width = 33+"px";
+				img.style.height = 33+"px";
+				 document.getElementById("text_back").style.fontSize = "16px";
 		}
 	</script>
 </head>
@@ -196,7 +217,10 @@
 		    	</div>
 		    </div>
 		<div class="back">
-				<span class="text_back">BACK TO MAP</span>
+				<button  onmouseleave="zoomNomalBack()" onmouseover="zoomBigBack()" id="btn_back"  class="btn_back">
+					<img  id="img_back"  class="img_back" src="back.png">
+					<span  id="text_back" style="font-size: 16px">BACK TO MAP</span>
+				</button>
 		</div>
 		
 		</div>
