@@ -1,0 +1,117 @@
+body{
+    position: relative;
+    background: none;
+}
+.map{
+    background: none;
+    width: 8cm;
+    margin-right: 2cm;
+    margin-top: 0.5cm;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 80%;
+    z-index: 1;
+}
+.img-map{
+    text-align: center;
+}
+.map_1{
+    position: absolute;
+    top: 1.18cm;
+    left: 1.15cm;
+}
+.map_2{
+    position: absolute;
+    top: 4.35cm;
+    left: 0.32cm;
+}
+.map_3{
+    position: absolute;
+    top: 7.5cm;
+    left: 3.23cm;
+}
+.map_4{
+    position: absolute;
+    top: 9.88cm;
+    left: 0.55cm;
+}
+.map_5{
+    position: absolute;
+    top: 12.12cm;
+    left: 3.85cm;
+}
+.btn_Map_left{
+    border: none;
+    position: relative;
+    top: -5px;
+    left: 10px;
+    /*padding: 10px;*/
+    border-radius: 100%;
+    background: none;
+    border: 4px solid white;
+
+}
+.btn_Map_left:hover{
+    padding: 12px 12px;
+    background: #4aa84e;
+}
+.btn_Map_left:active{
+    padding: 12px 12px;
+    background: #4aa84e;
+}
+
+.btn_Map_right:active{
+    padding: 12px 12px;
+    background: #4aa84e;
+}
+.btn_Map_right:hover{
+    padding: 12px 12px;
+    background: #4aa84e;
+}
+
+.btn_Map_right{
+
+    position: relative;
+    top: -5px;
+    left: -10px;
+    /*padding: 10px;*/
+    border-radius: 100%;
+    background: none;
+    border: 4px solid white;
+
+}
+.style_Map{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: FestivoLettersNo1,Arial;
+}
+.back{
+    position: relative;
+    left: 80px;
+    top: -10px;
+}
+
+.back button{
+    position: relative;
+    top: 0px;
+    left: -10px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: FestivoLettersNo1,Arial;
+    background: none;
+    border: none;
+    text-align: center;
+}
+.img_back{
+    position: relative;
+    left: -8px;
+    top: 10px;
+    content: ' ';
+    display: inline-block;
+    background-size: 100%;
+    width: 33px;
+    height: 33px;
+}
